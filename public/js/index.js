@@ -6,11 +6,6 @@ socket.on('connect', function() {
   socket.on('newMessage', function(data) {
     console.log('Recieved message', data);
   });
-
-  socket.emit('createMessage', {
-    'from': 'hanzlpe@icloud.com',
-    'text': 'Hello World!'
-  });
 });
 
 socket.on('disconnect', function() {
